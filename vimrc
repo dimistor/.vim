@@ -49,6 +49,9 @@ set viminfo='25,\"50,n~/.vim/.viminfo
 
 let g:airline#extensions#tabline#enabled=1
 
+if has('gui_running')
+  let g:airline_powerline_fonts=1
+endif
 
 " toggle relative line numbers
 nnoremap <silent> <C-n> :setlocal relativenumber!<CR>
